@@ -37,8 +37,8 @@ function App() {
           <Blogs handleBookMark={handleBookMark} handleMarkAsRead={handleMarkAsRead}></Blogs>
         </div>
         <div className="right-container w-[30%]">
-          <h1>Reading time : {readingCount}</h1>
-          <h1>Bookmarkred count: {bookmarked.length}</h1>
+          <h1 className='bg-amber-700 p-2 shadow-amber-500 m-4 rounded-lg text-3xl font-bold'>Reading time : {readingCount}</h1>
+          <h1 className='bg-teal-700 p-2  m-4 rounded-lg text-3xl font-bold'>BookMarked count: {bookmarked.length}</h1>
 
           {
             bookmarked.map((marked) =><p key={marked.id} className='bg-amber-700 p-2 shadow-amber-500 m-4 rounded-lg'>{marked.title}</p>)
